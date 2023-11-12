@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8a940; /* Orange background color */
+    color: #333;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    text-align: center; /* Center the navigation items */
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.menu h2 {
+    color: #333;
+    text-align: center; /* Center the heading */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.menu li {
+    width: calc(50% - 20px); /* Adjusted width and margin for smaller screens */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu li .menu-item span {
+    display: block;
+    font-weight: bold;
+    color: #f8a940; /* Orange color */
+}
+
+.menu li .menu-item span.menu-text {
+    font-family: 'Your Desired Font', sans-serif; /* Replace with your desired font */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .menu li {
+        width: calc(100% - 20px); /* Full width for smaller screens */
+    }
+
+    .navbar {
+        text-align: center; /* Center the navigation items */
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0; /* Add spacing between navigation items */
+    }
+}
+
+.location,
+.contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center; /* Center-align text in Location and Contact sections */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.home-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home-section h2 {
+    color: #f8a940;
+    margin-bottom: 20px;
+}
+
+.chat-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Ensure the iframe stays above other elements */
+}
